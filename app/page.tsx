@@ -7,20 +7,28 @@ import { useEffect, useState } from "react";
 import { Product } from "@/types/products";
 import { ProductsContext } from "@/contexts/products-context";
 import { useContext } from "react";
+import Loading from "./loading";
 
 
 export default function Home() {
   const productsContext = useContext(ProductsContext);
   const bothclothing = productsContext?.bothclothing ?? [];
+  const loading = productsContext?.loading ?? true;
 
   return (
     <main className="min-h-screen">
       <section className="my-20 max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold mb-8 text-gray-800">Flash Sale</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {bothclothing.slice(0, 4).map((item: Product) => (
-            <ClothCardComponent key={item.id} item={item} />
-          ))}
+            {loading ? (
+            <div className="col-span-full flex justify-center items-center min-h-[200px]">
+              <Loading />
+            </div>
+            ) : (
+            bothclothing.slice(0, 4).map((item: Product) => (
+              <ClothCardComponent key={item.id} item={item} />
+            ))
+            )}
         </div>
       </section>
       <section className="max-w-6xl mx-auto px-4 my-20">
