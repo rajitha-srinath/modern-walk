@@ -1,6 +1,6 @@
 # Modern Walk
 
-A website for fashion clothing, built with Next.js 14.
+A website for fashion clothing, built with Next.js 14, Featuring clothing collections for both men and women.
 
 ## Features
 
@@ -34,9 +34,6 @@ npm run dev
 # or
 yarn dev
 # or
-pnpm dev
-# or
-bun dev
 ```
 
 Now, open [http://localhost:3000](http://localhost:3000) in your browser to view the site. 
