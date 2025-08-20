@@ -9,9 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'men-color': "#2BD9AF",
+        'women-color': '#FF5E84',
+        'price-color': '#0E42FD',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+        'custom': '10px 15px 20px 0px rgba(0, 0, 0, 0.15)',
+      }
     },
   },
   plugins: [],
