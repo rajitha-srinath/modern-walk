@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-const ClothCardComponent = ({ item }: { item: any }) => {
+import { Product } from "@/types/products";
+
+const ClothCardComponent = ({ item }: { item: Product }) => {
   return (
     <div
       key={item.id}

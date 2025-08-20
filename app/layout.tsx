@@ -12,7 +12,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Fashion Hub",
+  title: "Modern Walk",
   description: "Online Fashion Store",
 };
 

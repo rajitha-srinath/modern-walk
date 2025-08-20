@@ -1,9 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Walk
+
+A website for fashion clothing, built with Next.js 14.
+
+## Features
+
+- Responsive design for all devices
+- Men's and women's clothing sections
+- Fast performance with Next.js 14
+- TypeScript for type safety
+- Tailwind CSS for styling
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18.17 or later
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone 'https://github.com/rajitha-srinath/modern-walk'
+cd modern-walk
+```
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
@@ -14,4 +39,4 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now, open [http://localhost:3000](http://localhost:3000) in your browser to view the site. 
